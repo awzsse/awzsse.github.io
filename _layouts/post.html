@@ -115,7 +115,6 @@ layout: default
                 {% endif %}
 		
 		
-		{% if site.gitment.enable %}
 		<div id="gitmentContainer"></div>
 		<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 		<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
@@ -128,10 +127,9 @@ layout: default
     					client_id: 'd16371d4b3511405e686',
     					client_secret: 'b3b78e04473ba80b8d800f38188d526eb239d9cc',
   					},
-				})
-			gitment.render('gitmentContainer')
+				});
+			gitment.render('gitmentContainer');
 		</script>
-		{% endif %}
             </div>  
 
     <!-- Side Catalog Container -->
