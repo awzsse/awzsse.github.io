@@ -113,7 +113,21 @@ layout: default
                 </div>
                 <!-- disqus 评论框 end -->
                 {% endif %}
-
+		
+		<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+		<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+		<script>
+			var gitment = new Gitment({
+//   				id: '页面 ID', // 可选。默认为 location.href
+  				owner: 'awzsse',
+  				repo: 'awzsse',
+  				oauth: {
+    					client_id: 'd16371d4b3511405e686',
+    					client_secret: 'b3b78e04473ba80b8d800f38188d526eb239d9cc',
+  					},
+				})
+			gitment.render('container')
+		</script>
             </div>  
 
     <!-- Side Catalog Container -->
