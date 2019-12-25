@@ -70,6 +70,13 @@ gitalk:
   id: location.awzsse.github.io/2019/12/24/HelloBlog
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
+# Gitment
+gitment:
+  enable: true    #是否开启Gitalk评论
+  clientID: d16371d4b3511405e686                            #生成的clientID
+  clientSecret: b3b78e04473ba80b8d800f38188d526eb239d9cc    #生成的clientSecret
+  repo: awzsse.github.io    #仓库名称
+  owner: awzsse    #github用户名
 
 # 统计
 
