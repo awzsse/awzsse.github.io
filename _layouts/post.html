@@ -112,6 +112,22 @@ layout: default
                 </div>
                 <!-- disqus 评论框 end -->
                 {% endif %}
+		
+		<div id="gitmentContainer"></div>
+		<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+		<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+		<script>
+			var gitment = new Gitment({
+//   			id: '页面 ID', // 可选。默认为 location.href
+  			owner: awzsse,
+  			repo: https://github.com/awzsse/awzsse.github.io,
+  			oauth: {
+    				client_id: d16371d4b3511405e686,
+    				client_secret: b3b78e04473ba80b8d800f38188d526eb239d9cc,
+  				},
+			});
+			gitment.render('gitmentContainer');
+		</script>
 	    </div>
 
     <!-- Side Catalog Container -->
@@ -169,21 +185,6 @@ layout: default
     </div>
 </article>
 
-<div id="gitmentContainer"></div>
-	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-	<script>
-		var gitment = new Gitment({
-//   			id: '页面 ID', // 可选。默认为 location.href
-  			owner: awzsse,
-  			repo: https://github.com/awzsse/awzsse.github.io,
-  			oauth: {
-    				client_id: d16371d4b3511405e686,
-    				client_secret: b3b78e04473ba80b8d800f38188d526eb239d9cc,
-  				},
-			});
-		gitment.render('gitmentContainer');
-	</script>
 
 {% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
