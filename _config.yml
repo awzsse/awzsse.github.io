@@ -57,12 +57,11 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-# disqus_username: awzsse
+disqus_username: awzsse
 
 # Gitalk
-# gitalk:
-comments:
-  enable: true    #是否开启Gitalk评论
+gitalk:
+  enable: false    #是否开启Gitalk评论
   clientID: d16371d4b3511405e686                            #生成的clientID
   clientSecret: b3b78e04473ba80b8d800f38188d526eb239d9cc    #生成的clientSecret
   repo: awzsse.github.io    #仓库名称
